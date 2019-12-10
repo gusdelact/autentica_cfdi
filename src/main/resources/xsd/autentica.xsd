@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+* This software is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
+-->
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://cfdi.autentica/autentica"
+    xmlns:tns="http://cfdi.autentica/autentica"
+    elementFormDefault="qualified">
+    
+    <element name="AutenticaRequest">
+      <complexType>
+           <sequence>	
+                <element minOccurs="0" name="cadena" type="string"/>
+            </sequence>
+       </complexType>
+    </element>
+
+     <element name="AutenticaResponse">
+        <complexType>
+            <sequence>	
+                <element minOccurs="0" name="AutenticaResult" nillable="true" type="string"/>
+            </sequence>
+        </complexType>
+    </element>
+
+</schema>
